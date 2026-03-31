@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 
 df = pd.read_excel(r"C:\Users\GIRIRANJAN\OneDrive\Desktop\HHS_Unaccompanied_Alien_Children_Program.xlsx")
+df = pd.read_excel("HHS_Unaccompanied_Alien_Children_Program.xlsx")
 
 # Ensure proper data types
 df["Date"] = pd.to_datetime(df["Date"])
