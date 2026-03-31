@@ -1,8 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-url = "https://raw.githubusercontent.com/Giriranjan-Jadhav/HHS_Unaccompanied_Alien_Children_Program/main/HHS_Unaccompanied_Alien_Children_Program.xlsx"
-df = pd.read_excel(url)
+df = pd.read_excel("HHS_Unaccompanied_Alien_Children_Program.xlsx")
 
 df["Date"] = pd.to_datetime(df["Date"])
 df["Backlog_Indicator"] = pd.to_numeric(df["Backlog_Indicator"], errors="coerce")
